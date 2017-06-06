@@ -1,0 +1,33 @@
+{
+  "name": "lambda-cloudflare-purge-cache",
+  "version": "1.0.0",
+  "description": "AWS Lambda Function to Purge Cloudflare Cache",
+  "main": "index.js",
+  "scripts": {
+    "invoke": "grunt lambda_invoke",
+    "lint": "standard '**/*.js' --verbose | snazzy",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tfentonz/lambda-cloudflare-purge-cache.git"
+  },
+  "keywords": [
+    "lambda",
+    "cloudflare",
+    "cache"
+  ],
+  "author": "Tom Fenton <tom@mediasuite.co.nz>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-aws-lambda": "^0.13.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  }
+}
